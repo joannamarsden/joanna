@@ -1,4 +1,4 @@
-@import "foundation_and_overrides";
+@import 'foundation_and_overrides'; 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -12,17 +12,26 @@
  *= require refinery/formatting
  *= require refinery/theme
  *= require_self
-
  *= require_tree .
  */
 
-// RefineryCMS Customization
+@import url(//fonts.googleapis.com/css?family=Playfair+Display:400,700);
+@import url(//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import "font-awesome";
+
+/* RefineryCMS Customization */
 header {
 }
 #page {
+  background: rgba(255, 255, 255, .80);
+  min-height:500px !important;
+  padding: 2%;
+  margin-top:2% !important; 
+  margin-bottom:2%;
   @include grid-row();
   #body {
     @include grid-column(9);
+    min-height: 70%;
   }
   .no_side_body #body {
     @include grid-column(12);
@@ -31,8 +40,53 @@ header {
     @include grid-column(3);
   }
 }
-footer {
-}
+
 .top-bar {
   .title-area { z-index: 2; }
+}
+
+/* Sticky Footer */
+* {
+margin: 0;
+}
+html, body {
+height: 100%;
+}
+.wrapper {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -4em;
+}
+.footer, .push {
+height: 4em;
+clear: both;
+}
+
+#body_content_title {
+  padding-left:0.9375rem
+}
+
+footer {
+  text-align: center;
+}
+
+.footer-menu {
+  background: image-url("paper.png") repeat 0 0;
+  padding-bottom:1%;
+  padding-top:1%;
+}
+
+.footer-menu ul {
+  text-align: center;
+  font-size: 2em;
+}
+
+.footer-menu li {
+  display: inline;
+  padding: .2em 1em;
+}
+
+.footer-menu p {
+  text-align: center;
 }

@@ -6,17 +6,23 @@
   </head>
   <body id="<%= canonical_id @page %>">
     <%= site_bar -%>
-    <div id="page_container">
+    <div id="page_container" class="wrapper">
       <header id="header">
         <%= render "/refinery/header" -%>
       </header>
       <section id="page">
         <%= yield %>
       </section>
-      <footer>
+      <div class="push"></div>
+      <footer class="footer" id="footer">
         <%= render "/refinery/footer" -%>
       </footer>
     </div>
     <%= render "/refinery/javascripts" %>
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $.backstretch("<%= asset_path 'washi.jpg' %>");
+       })
+    </script>
   </body>
 </html>
