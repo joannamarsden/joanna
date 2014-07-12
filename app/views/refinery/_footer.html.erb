@@ -1,12 +1,11 @@
 <div class="footer-menu">
-<ul>
+<ul class="footer-links">
 	<li><%= link_to icon('facebook'), "https://www.facebook.com/joanna.marsden.traverso" %></li>
 	<li><%= link_to icon('cloud'), "https://soundcloud.com/joanna-marsden" %></li>
 	<li><%= link_to icon('instagram'), "http://instagram.com/jmarsden1729" %></li>
 	<li><%= link_to icon('envelope-o'), "#" %></li>
 </ul>
-<p>
-  <%= t('.copyright', :year => Time.now.year,
-                      :site_name => Refinery::Core.site_name) %>
-</p>
+<%= footer_menu.to_html %>
+<small><%= t('.copyright', :year => Time.now.year,
+                      :site_name => Refinery::Core.site_name) %></small>
 </div>

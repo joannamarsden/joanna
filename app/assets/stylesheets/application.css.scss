@@ -24,7 +24,7 @@ header {
 }
 #page {
   background: rgba(255, 255, 255, .80);
-  min-height:500px !important;
+  min-height:400px !important;
   padding: 2%;
   margin-top:2% !important; 
   margin-bottom:2%;
@@ -79,6 +79,9 @@ footer {
 
 .footer-menu ul {
   text-align: center;
+}
+
+ul.footer-links {
   font-size: 2em;
 }
 
