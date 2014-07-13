@@ -30,14 +30,14 @@ header {
   margin-bottom:2%;
   @include grid-row();
   #body {
-    @include grid-column(9);
+    @include grid-column(8);
     min-height: 70%;
   }
   .no_side_body #body {
     @include grid-column(12);
   }
   #side_body {
-    @include grid-column(3);
+    @include grid-column(4);
   }
 }
 

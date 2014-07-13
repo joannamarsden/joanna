@@ -1168,7 +1168,7 @@ $header-font-family: 'Playfair Display', Times, Georgia, serif;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-$topbar-bg-color: rgba(255, 255, 255, .80);
+$topbar-bg-color: $primary-color;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1180,8 +1180,8 @@ $topbar-bg-color: rgba(255, 255, 255, .80);
 // $topbar-title-font-size: rem-calc(17);
 
 // Style the top bar dropdown elements
-$topbar-dropdown-bg: rgba(255, 255, 255, 0);
-$topbar-dropdown-link-color: $primary-color;
+$topbar-dropdown-bg: $primary-color;
+$topbar-dropdown-link-color: #fff;
 $topbar-dropdown-link-bg: $topbar-bg-color;
 // $topbar-dropdown-link-weight: normal;
 // $topbar-dropdown-toggle-size: 5px;
@@ -1189,16 +1189,16 @@ $topbar-dropdown-link-bg: $topbar-bg-color;
 // $topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav
-$topbar-link-color: $primary-color;
-$topbar-link-color-hover: scale-color($primary-color, $lightness: -14%);
+$topbar-link-color: #fff;
+$topbar-link-color-hover: #fff;
 // $topbar-link-color-active: #fff;
 // $topbar-link-color-active-hover: #fff;
 // $topbar-link-weight: normal;
 // $topbar-link-font-size: rem-calc(13);
 $topbar-link-hover-lightness: +10%; // Darken by 10%
 $topbar-link-bg: rgba(255, 255, 255, 0);
-$topbar-link-bg-hover: rgba(255, 255, 255, 0.9);
-// $topbar-link-bg-active: $primary-color;
+$topbar-link-bg-hover: scale-color($primary-color, $lightness: -14%);
+$topbar-link-bg-active: scale-color($primary-color, $lightness: -14%);
 $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
