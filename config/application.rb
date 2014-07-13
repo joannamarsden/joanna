@@ -58,6 +58,10 @@ module Joanna
     # in your app. As such, your models will need to explicitly whitelist or blacklist accessible
     # parameters by using an attr_accessible or attr_protected declaration.
     config.active_record.whitelist_attributes = true
+    
+    ENV['S3_KEY']='AKIAJN4MMPXXGCZQBTTA'
+    ENV['S3_SECRET']='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'
+    ENV['S3_BUCKET']='joannamarsden'
 
     # Enable the asset pipeline
     config.assets.enabled = true
