@@ -44,6 +44,8 @@ gem 'backstretch-rails'
 # To use debugger
 # gem 'debugger'
 
+gem 'newrelic_rpm'
+
 gem 'fog'
 
 # Refinery CMS
